@@ -1,5 +1,48 @@
 #include "Header.h"
 
+void Book::setAuthor(string author_value)
+{
+    author = author_value;
+}
+
+void Book::setName(string name_value)
+{
+    name = name_value;
+}
+
+void Book::setYear(int year_value)
+{
+    year = year_value;
+}
+
+void Book::setPages(int pages_value)
+{
+    pages = pages_value;
+}
+
+
+string Book::getAuthor()
+{
+    return author;
+}
+
+string Book::getName()
+{
+    return name;
+}
+
+int Book::getYear()
+{
+    return year;
+}
+
+int Book::getPages()
+{
+    return pages;
+}
+
+
+
 Book* CreateArray(int count)
 {
     int year_value, pages_value;

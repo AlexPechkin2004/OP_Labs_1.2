@@ -10,46 +10,15 @@ private:
     int year, pages;
 
 public:
-    void setAuthor(string author_value)
-    {
-        author = author_value;
-    }
+    void setAuthor(string author_value);
+    void setName(string name_value);
+    void setYear(int year_value);
+    void setPages(int pages_value);
 
-    void setName(string name_value)
-    {
-        name = name_value;
-    }
-
-    void setYear(int year_value)
-    {
-        year = year_value;
-    }
-
-    void setPages(int pages_value)
-    {
-        pages = pages_value;
-    }
-
-
-    string getAuthor()
-    {
-        return author;
-    }
-
-    string getName()
-    {
-        return name;
-    }
-
-    int getYear()
-    {
-        return year;
-    }
-
-    int getPages()
-    {
-        return pages;
-    }
+    string getAuthor();
+    string getName();
+    int getYear();
+    int getPages();
 };
 
 Book* CreateArray(int);
